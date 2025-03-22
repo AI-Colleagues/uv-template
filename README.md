@@ -36,6 +36,8 @@ This template includes several tools to ensure code quality and maintainability:
   - Docstring validation (Google style)
   - And many more checks
 - **mypy**: Static type checking with strict settings
+- **Github Actions**:
+  - Release workflow on push tags
 
 ### Code Quality Tools
 
