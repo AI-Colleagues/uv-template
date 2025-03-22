@@ -41,7 +41,7 @@ exclude_lines = [
 [tool.coverage.run]
 branch = true
 command_line = "-m pytest"
-source = ["poetry_template"]
+source = ["uv_template"]
 
 [tool.mypy]
 disallow_untyped_defs = true
@@ -83,7 +83,7 @@ select = [
 
 [tool.ruff.lint.isort]
 force-single-line = true
-known-first-party = ["poetry_template"]
+known-first-party = ["uv_template"]
 lines-after-imports = 2
 no-lines-before = ["future", "standard-library", "third-party", "first-party", "local-folder"]
 
