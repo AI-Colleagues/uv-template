@@ -1,6 +1,6 @@
 lint:
 	ruff check .
-	mypy .
+	mypy uv_template
 	ruff format . --check
 
 format:
