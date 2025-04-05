@@ -1,6 +1,6 @@
 """Example module."""
 
 
-def main() -> None:  # pragma: no cover
+def main() -> None:
     """Entry point."""
     print("Hello from uv-template!")
