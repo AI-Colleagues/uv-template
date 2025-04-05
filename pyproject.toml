@@ -5,14 +5,16 @@ requires = ["hatchling"]
 [dependency-groups]
 dev = [
   "bump2version",
+  "diff-cover>=9.2.4",
   "isort",
-  "mypy==1.11.2",
+  "mypy>=1.11.2",
   "pre-commit",
   "pytest",
-  "pytest-asyncio==0.23.8",
-  "pytest-cov==4.1.0",
-  "ruff==0.4.6",
-  "types-requests"
+  "pytest-asyncio>=0.23.8",
+  "pytest-cov>=4.1.0",
+  "ruff>=0.11.3",
+  "smokeshow>=0.5.0",
+  "types-requests",
 ]
 docs = [
   "mkdocs",
@@ -28,7 +30,7 @@ description = "Add your description here"
 name = "uv-template"
 readme = "README.md"
 requires-python = ">=3.12"
-version = "0.1.0"
+version = "0.0.1"
 
 [tool.coverage.report]
 exclude_lines = [
@@ -41,7 +43,7 @@ exclude_lines = [
 [tool.coverage.run]
 branch = true
 command_line = "-m pytest"
-source = ["poetry_template"]
+source = ["uv_template"]
 
 [tool.mypy]
 disallow_untyped_defs = true
@@ -83,7 +85,7 @@ select = [
 
 [tool.ruff.lint.isort]
 force-single-line = true
-known-first-party = ["poetry_template"]
+known-first-party = ["uv_template"]
 lines-after-imports = 2
 no-lines-before = ["future", "standard-library", "third-party", "first-party", "local-folder"]
 
