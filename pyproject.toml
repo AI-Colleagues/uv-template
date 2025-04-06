@@ -84,7 +84,6 @@ select = [
 ]
 
 [tool.ruff.lint.isort]
-force-single-line = true
 known-first-party = ["uv_template"]
 lines-after-imports = 2
 no-lines-before = ["future", "standard-library", "third-party", "first-party", "local-folder"]
