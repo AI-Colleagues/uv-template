@@ -14,7 +14,7 @@ dev = [
   "pytest-cov>=4.1.0",
   "ruff>=0.11.3",
   "smokeshow>=0.5.0",
-  "types-requests",
+  "types-requests"
 ]
 docs = [
   "mkdocs",
@@ -30,6 +30,7 @@ description = "Add your description here"
 name = "uv-template"
 readme = "README.md"
 requires-python = ">=3.12"
+url = "https://github.com/AI-Colleagues/uv-template"
 version = "0.0.1"
 
 [tool.coverage.report]
@@ -44,6 +45,17 @@ exclude_lines = [
 branch = true
 command_line = "-m pytest"
 source = ["uv_template"]
+
+[tool.hatch.build.targets.wheel]
+exclude = [
+  "examples/",
+  "tests/",
+  "docs/",
+  ".github/",
+  "*.md",
+  "Makefile",
+  "mkdocs.yml"
+]
 
 [tool.mypy]
 disallow_untyped_defs = true
@@ -84,7 +96,6 @@ select = [
 ]
 
 [tool.ruff.lint.isort]
-force-single-line = true
 known-first-party = ["uv_template"]
 lines-after-imports = 2
 no-lines-before = ["future", "standard-library", "third-party", "first-party", "local-folder"]
