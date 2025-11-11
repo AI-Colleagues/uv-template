@@ -1,3 +1,5 @@
+.PHONY: test lint format doc
+
 lint:
 	ruff check .
 	mypy uv_template
