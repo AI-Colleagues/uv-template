@@ -46,6 +46,7 @@ def main() -> None:
     # Update pyproject.toml
     replace_in_file("pyproject.toml", "uv_template", underscore_name)
     replace_in_file("pyproject.toml", "uv-template", orig_name)
+    replace_in_file(".bumpversion.cfg", "uv_template", underscore_name)
 
     print("Project renamed successfully!")
     print(f"Original name: {orig_name}")
