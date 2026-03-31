@@ -30,8 +30,12 @@ description = "Add your description here"
 name = "uv-template"
 readme = "README.md"
 requires-python = ">=3.12"
-url = "https://github.com/AI-Colleagues/uv-template"
 version = "0.0.1"
+
+[project.urls]
+Homepage = "https://github.com/AI-Colleagues/uv-template"
+Issues = "https://github.com/AI-Colleagues/uv-template/issues"
+Source = "https://github.com/AI-Colleagues/uv-template"
 
 [tool.coverage.report]
 exclude_lines = [
