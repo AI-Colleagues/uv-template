@@ -48,7 +48,7 @@ exclude_lines = [
 [tool.coverage.run]
 branch = true
 command_line = "-m pytest"
-source = ["uv_template"]
+source = ["src/uv_template"]
 
 [tool.hatch.build.targets.wheel]
 exclude = [
