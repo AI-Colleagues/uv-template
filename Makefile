@@ -2,7 +2,7 @@
 
 lint:
 	ruff check .
-	mypy uv_template
+	mypy src/
 	ruff format . --check
 
 format:
