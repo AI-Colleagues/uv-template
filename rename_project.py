@@ -38,7 +38,7 @@ def main() -> None:
     underscore_name = get_underscore_name(orig_name)
 
     # Rename directory
-    rename_directory("uv_template", underscore_name)
+    rename_directory("src/uv_template", f"src/{underscore_name}")
 
     # Update Makefile
     replace_in_file("Makefile", "uv_template", underscore_name)
