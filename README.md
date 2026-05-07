@@ -91,3 +91,13 @@ pytest --cov --cov-report term-missing tests/
 3. Start developing with the included tools
 
 For more detailed information, check the documentation.
+
+## Spec Templates
+
+The `project/spec_templates/` directory contains structured templates for software specification:
+
+- [**1_requirements_template.md**](project/spec_templates/1_requirements_template.md) — Requirements document for capturing functional and non-functional requirements
+- [**2_design_template.md**](project/spec_templates/2_design_template.md) — Design document for architectural decisions and system design
+- [**3_plan_template.md**](project/spec_templates/3_plan_template.md) — Project plan for tracking milestones and implementation steps
+
+Copy and fill in these templates at the start of a new feature or project to keep specifications alongside your code.
